@@ -6,3 +6,4 @@ $packages = @("googlechrome", "7zip", "adobereader", "pdf24", "teamviewer")
 foreach ($package in $packages) {
     choco install $package -y
 }
+choco install office365business --params "'/language:de-DE /updates:TRUE /eula:TRUE'"
