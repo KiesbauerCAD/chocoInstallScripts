@@ -6,4 +6,4 @@ $packages = @("firefox", "7zip", "irfanview", "greenshot", "pdf24", "adobereader
 foreach ($package in $packages) {
     choco install $package -y
 }
-choco install microsoft-office-deployment --params="'/64bit /Language:de-de /Product:Standard2024Volume /LicenseKey:$licenseKey'" -y
+choco install microsoft-office-deployment --params="'/64bit /Language:de-de /Product:Standard2024Volume /LicenseKey:$LicenseKey'" -y
