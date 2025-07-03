@@ -1,4 +1,4 @@
-# Scripts
+# Choco Scripts
 ## choco_install.ps1 (installiert nur choco)
 ```
 $scriptUrl = "https://raw.githubusercontent.com/KiesbauerCAD/chocoInstallScripts/main/choco_install.ps1"; $currentPolicy = Get-ExecutionPolicy; Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString($scriptUrl)); Set-ExecutionPolicy $currentPolicy -Scope Process -Force
@@ -21,7 +21,7 @@ $licenseKey="XXXXX-XXXXX-XXXXX-XXXXX-XXXXX"; $scriptUrl="https://raw.githubuserc
 ```
 
 
-# Weitere Befehle
+# Weitere Choco Befehle
 ## Office 2024 Standard (mit Key)
 ```
 choco install microsoft-office-deployment --params="'/64bit /Language:de-de /Product:Standard2024Volume /LicenseKey:XXXXX-XXXXX-XXXXX-XXXXX-XXXXX'" -y
@@ -39,3 +39,8 @@ choco install microsoft-office-deployment --params="'/64bit /Language:de-de /Pro
 choco install office365business --params "'/language:de-DE /updates:TRUE /eula:TRUE'" -y
 ```
 
+# CTT Winutil 
+https://christitus.com/
+```
+iwr -useb https://christitus.com/win | iex
+```
